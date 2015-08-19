@@ -19,8 +19,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/dennisklein/miniasset. Everyone interacting in Miniasset CLI and its sub-project's codebases, issue trackers, chat rooms, and mailing lists is expected to follow this [code of conduct](/CODE_OF_CONDUCT.md)
+Bug reports and pull requests are welcome on GitHub at https://github.com/dennisklein/miniasset. Everyone interacting in Miniasset CLI and its sub-project's codebases, issue trackers, chat rooms, and mailing lists is expected to follow this [code of conduct](/CODE_OF_CONDUCT.md).
 
 ## License
 
-Miniasset CLI is released under the [MIT License](http://www.opensource.org/licenses/MIT)
+Miniasset CLI is released under the [MIT License](/LICENSE)
