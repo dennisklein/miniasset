@@ -1,0 +1,1 @@
+require 'miniasset/model/datacenter'
