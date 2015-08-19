@@ -8,6 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Miniasset::VERSION
   spec.authors       = ["Dennis Klein"]
   spec.email         = ["d.klein@gsi.de"]
+  spec.licenses      = ['LICENSE']
 
   spec.summary       = %q{Miniasset CLI}
   spec.description   = %q{CLI for the Miniasset Datacenter Management API.}
@@ -20,7 +21,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "rspec", '~> 3.3'
 
   spec.add_dependency 'thor', '~> 0.19'
   spec.add_dependency 'rocket_pants', '~> 1.0'

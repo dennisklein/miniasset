@@ -1,28 +1,15 @@
-# Miniasset
+# Miniasset CLI
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/miniasset`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem provides the command-line interface `miniasset` which is a client for the Miniasset Datacenter Asset Management API.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'miniasset'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install miniasset
+    $ bin/setup
+    $ bundle exec rake install
 
 ## Usage
 
-TODO: Write usage instructions here
+Run `miniasset -h` in a shell to retrieve usage information.
 
 ## Development
 
@@ -32,5 +19,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/miniasset.
+Bug reports and pull requests are welcome on GitHub at https://github.com/dennisklein/miniasset. Everyone interacting in Miniasset CLI and its sub-project's codebases, issue trackers, chat rooms, and mailing lists is expected to follow this [code of conduct](/CODE_OF_CONDUCT.md)
 
+## License
+
+Miniasset CLI is released under the [MIT License](http://www.opensource.org/licenses/MIT)
