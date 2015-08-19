@@ -1,6 +1,6 @@
 # Miniasset CLI
 
-This gem provides the command-line interface `miniasset` which is a client for the Miniasset Datacenter Asset Management API.
+This gem provides the command-line interface `miniasset` which is a client for the [Miniasset - Datacenter Asset Management API](https://github.com/dennisklein/miniasset_server).
 
 ## Installation
 
