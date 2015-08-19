@@ -11,6 +11,16 @@ This gem provides the command-line interface `miniasset` which is a client for t
 
 Run `miniasset -h` in a shell to retrieve usage information.
 
+## Tested
+
+* Debian Jessie, MRI Ruby 2.1.5
+
+## Acknowledgements
+
+Miniasset CLI is built using these awesome gems and their dependencies:
+* [thor](https://github.com/erikhuda/thor)
+* [rocket_pants](https://github.com/Sutto/rocket_pants)
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
