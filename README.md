@@ -13,7 +13,7 @@ Run `miniasset -h` in a shell to retrieve usage information.
 
 ## Tested
 
-* Debian Jessie, MRI Ruby 2.1.5
+* Debian Jessie, MRI Ruby 2.1.5, see also [Gemfile.lock](/Gemfile.lock)
 
 ## Acknowledgements
 
