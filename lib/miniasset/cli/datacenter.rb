@@ -7,19 +7,21 @@ module Miniasset::Cli
     method_option 'table_header', aliases: '-t', desc: 'Control printing of the table header', type: :boolean, default: true
     method_option 'simple', aliases: '-s', desc: 'Print a simple list of datacenter names, implies --no-table-header', type: :boolean, default: false
     def list
-      app = Miniasset::Application.new
+      datacenters = Miniasset::Application.new.datacenters
       header = '%2s %s'
       body = '%2d %s'
 
-      puts header % ['ID', 'NAME'] if !options['table_header'] || !options['simple']
+      say header % ['ID', 'NAME'] if !options['table_header'] || !options['simple']
 
-      app.datacenters.each do |datacenter|
+      datacenters.each do |datacenter|
         if options['simple']
-          puts datacenter.name
+          say datacenter.name
         else
-          puts body % [datacenter.id, datacenter.name]
+          say body % [datacenter.id, datacenter.name]
         end
       end
+    rescue StandardError => e
+      raise Thor::Error.new set_color(e.to_s, :red, :bold)
     end
   end
 end
