@@ -9,5 +9,9 @@ module Miniasset
     def datacenters
       get 'datacenter', transformer: Miniasset::Model::Datacenter
     end
+
+    def racks
+      get 'rack', transformer: Miniasset::Model::Rack
+    end
   end
 end
