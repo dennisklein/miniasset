@@ -22,6 +22,10 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", '~> 3.3'
+  spec.add_development_dependency 'pry', '~> 0.10'
+  spec.add_development_dependency 'pry-doc', '~> 0.8'
+  spec.add_development_dependency 'pry-coolline', '~> 0.2'
+  spec.add_development_dependency 'pry-state', '~> 0.1'
 
   spec.add_dependency 'thor', '~> 0.19'
   spec.add_dependency 'rocket_pants', '~> 1.0'
