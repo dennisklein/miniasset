@@ -5,5 +5,6 @@ module Miniasset::Model
     property :id
     property :name
     property :description
+    property :rack_prefix
   end
 end

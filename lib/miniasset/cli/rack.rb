@@ -6,23 +6,27 @@ module Miniasset::Cli
   class Rack < Thor
     desc 'list', 'List racks'
     method_option 'table_header', aliases: '-t', desc: 'Control printing of the table header', type: :boolean, default: true
-    method_option 'simple', aliases: '-s', desc: 'Print a simple list of rack names, implies --no-table-header', type: :boolean, default: false
     def list
       racks = Miniasset::Application.new.racks
-      header = '%2s %s'
-      body = '%2d %s'
+      table = []
+      cols = [:id, :name, :custom_prefix]
 
-      say header % ['ID', 'NAME'] if !options['table_header'] || !options['simple']
-
+      table << cols.map { |col| col.to_s.upcase } if options['table_header']
       racks.each do |rack|
-        if options['simple']
-          say rack.name
-        else
-          say body % [rack.id, rack.name]
-        end
+        table << cols.map { |col| rack.send col }
       end
+
+      print_table table
     rescue StandardError => e
       raise Thor::Error.new set_color(e.to_s, :red, :bold)
     end
+
+    desc 'columns', 'List available columns on the rack model'
+    def columns
+      Miniasset::Model::Rack.properties.sort.each do |property|
+        say property
+      end
+    end
+
   end
 end
